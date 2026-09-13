@@ -39,3 +39,8 @@ externalPort = 8081
 [[ports]]
 localPort = 26217
 externalPort = 3001
+
+[deployment]
+deploymentTarget = "static"
+build = ["bash", "-c", "cd Stage-Master && PORT=5000 BASE_PATH=/ pnpm --filter @workspace/stage-master run build"]
+publicDir = "Stage-Master/artifacts/stage-master/dist/public"
