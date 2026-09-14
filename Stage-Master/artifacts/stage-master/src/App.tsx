@@ -141,7 +141,8 @@ function App() {
         </section>
 
         <section className="relative overflow-hidden bg-[var(--paper)] py-24 lg:py-36">
-          <div className="mx-auto grid max-w-[1380px] items-center gap-16 px-6 lg:grid-cols-[.85fr_1.15fr] lg:gap-24 lg:px-12">
+          <img src="/stage-master-silence-cost.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute right-0 top-0 h-full w-[52%] object-cover opacity-[.17] mix-blend-multiply" />
+          <div className="relative z-10 mx-auto grid max-w-[1380px] items-center gap-16 px-6 lg:grid-cols-[.85fr_1.15fr] lg:gap-24 lg:px-12">
             <div className="reveal relative">
               <div className="absolute -left-6 top-3 h-28 w-px bg-[var(--gold)]" />
               <p className="mb-6 text-[10px] font-bold uppercase tracking-[.26em] text-[var(--blue)]">What silence is actually costing you</p>
@@ -165,7 +166,9 @@ function App() {
         </section>
 
         <section id="nlp-edge" className="relative overflow-hidden bg-[var(--navy)] py-24 text-white lg:py-32">
-          <div className="mx-auto max-w-[1380px] px-6 lg:px-12">
+          <img src="/stage-master-nlp-edge.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20" />
+          <div className="pointer-events-none absolute inset-0 bg-[var(--navy)]/80" />
+          <div className="relative z-10 mx-auto max-w-[1380px] px-6 lg:px-12">
             <div className="reveal max-w-3xl">
               <p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--gold)]">The unfair advantage</p>
               <h2 className="mt-6 text-4xl font-extrabold leading-[1.02] sm:text-6xl">Some people say something ordinary and the room leans in. It was never charisma.</h2>
@@ -185,9 +188,12 @@ function App() {
 
         <section id="inside" className="bg-[#e9edf1] py-24 lg:py-36">
           <div className="mx-auto max-w-[1380px] px-6 lg:px-12">
-            <div className="reveal flex flex-col justify-between gap-6 border-b border-[var(--line)] pb-10 sm:flex-row sm:items-end">
+            <div className="reveal grid gap-8 border-b border-[var(--line)] pb-10 lg:grid-cols-[1fr_300px] lg:items-end">
               <div><p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--blue)]">The curriculum</p><h2 className="mt-4 max-w-2xl text-4xl font-extrabold leading-[1.03] sm:text-6xl">7 modules.<br /><span className="text-[var(--blue)]">Zero theory. Usable tonight.</span></h2></div>
-              <p className="max-w-xs text-sm leading-6 text-slate-600">Every module gives you a skill and the NLP pattern that makes it bite. Start at Module 1 and use it in your next recording in under 40 minutes.</p>
+              <div>
+                <img src="/stage-master-curriculum.jpg" alt="Seven blank curriculum cards arranged on a desk" className="h-32 w-full object-cover shadow-premium" />
+                <p className="mt-4 max-w-xs text-sm leading-6 text-slate-600">Every module gives you a skill and the NLP pattern that makes it bite. Start at Module 1 and use it in your next recording in under 40 minutes.</p>
+              </div>
             </div>
             <div className="mt-3">
               {modules.map((module, index) => <div key={module.no} className={`reveal reveal-delay-${Math.min(index % 4, 3)} group grid grid-cols-[48px_1fr] items-center gap-4 border-b border-[var(--line)] py-7 transition-colors hover:bg-white/60 sm:grid-cols-[80px_1fr_1fr_24px] sm:gap-6`}>
@@ -206,8 +212,9 @@ function App() {
         </section>
 
         <section id="reseller" className="relative overflow-hidden bg-[var(--gold)] py-24 lg:py-32">
+          <img src="/stage-master-reseller.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute right-0 top-0 h-full w-[48%] object-cover opacity-[.18] mix-blend-multiply" />
           <div className="absolute -right-20 -top-32 text-[260px] font-black leading-none text-white/10">100%</div>
-          <div className="relative mx-auto max-w-[1380px] px-6 lg:px-12">
+          <div className="relative z-10 mx-auto max-w-[1380px] px-6 lg:px-12">
             <div className="reveal max-w-3xl">
               <p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--navy)]">The part nobody else offers — Reseller Rights</p>
               <h2 className="mt-6 text-4xl font-extrabold leading-[1.02] text-[var(--navy)] sm:text-6xl">Buy it once. Sell it forever. Keep every single cent.</h2>
@@ -254,8 +261,10 @@ function App() {
           </div>
         </section>
 
-        <section id="pricing" className="bg-[var(--navy)] py-24 text-white lg:py-36">
-          <div className="mx-auto max-w-[1380px] px-6 lg:px-12">
+        <section id="pricing" className="relative overflow-hidden bg-[var(--navy)] py-24 text-white lg:py-36">
+          <img src="/stage-master-pricing.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20" />
+          <div className="pointer-events-none absolute inset-0 bg-[var(--navy)]/80" />
+          <div className="relative z-10 mx-auto max-w-[1380px] px-6 lg:px-12">
             <div className="reveal text-center"><p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--gold)]">One payment. Everything. Now.</p><h2 className="mx-auto mt-5 max-w-3xl text-4xl font-extrabold leading-[1.03] sm:text-6xl">Learn it for $47 — or own it and sell it for $147.</h2><p className="mx-auto mt-6 max-w-lg text-sm leading-7 text-slate-300">No subscription. No upsell wall. You pay once and the whole thing is yours, in your download folder, tonight.</p></div>
             <div className="mx-auto mt-14 grid max-w-4xl gap-5 lg:grid-cols-2">
               <div className="pricing-card reveal reveal-delay-1 border border-white/20 bg-white/[.06] p-7 sm:p-9">
@@ -282,18 +291,25 @@ function App() {
               <p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--blue)]">Who it’s for</p>
               <h2 className="mt-5 text-4xl font-extrabold leading-[1.04] sm:text-6xl">If your income depends on your mouth, this is the highest-ROI $47 you’ll spend.</h2>
             </div>
-            <div className="mt-12 grid gap-px bg-[var(--line)] sm:grid-cols-2 lg:grid-cols-4">
-              {audiences.map(([title, copy]) => <div key={title} className="reveal bg-[var(--paper)] p-6 sm:p-8">
-                <h3 className="text-xl font-bold">{title}</h3>
-                <p className="mt-4 text-sm leading-6 text-slate-600">{copy}</p>
-              </div>)}
+            <div className="mt-12 grid gap-10 lg:grid-cols-[.78fr_1.22fr] lg:items-start">
+              <img src="/stage-master-audience.jpg" alt="Online entrepreneurs talking together in a bright workshop" className="reveal h-full min-h-[280px] w-full object-cover shadow-premium" />
+              <div className="grid gap-px bg-[var(--line)] sm:grid-cols-2">
+                {audiences.map(([title, copy]) => <div key={title} className="reveal bg-[var(--paper)] p-6 sm:p-8">
+                  <h3 className="text-xl font-bold">{title}</h3>
+                  <p className="mt-4 text-sm leading-6 text-slate-600">{copy}</p>
+                </div>)}
+              </div>
             </div>
           </div>
         </section>
 
         <section id="faq" className="bg-[var(--paper)] py-24 lg:py-32">
           <div className="mx-auto grid max-w-[1000px] gap-14 px-6 lg:grid-cols-[.75fr_1.25fr] lg:px-12">
-            <div className="reveal"><p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--blue)]">Before you decide</p><h2 className="mt-5 text-4xl font-extrabold leading-[1.04] sm:text-5xl">Every objection, answered straight.</h2></div>
+            <div className="reveal">
+              <img src="/stage-master-faq.jpg" alt="Studio microphone and notebook on a pale desk" className="mb-8 aspect-[4/3] w-full object-cover shadow-premium" />
+              <p className="text-[10px] font-bold uppercase tracking-[.26em] text-[var(--blue)]">Before you decide</p>
+              <h2 className="mt-5 text-4xl font-extrabold leading-[1.04] sm:text-5xl">Every objection, answered straight.</h2>
+            </div>
             <div className="reveal reveal-delay-1">
               {faqs.map(([question, answer], index) => <div key={question} className="border-b border-[var(--line)]">
                 <button onClick={() => setOpenFaq(openFaq === index ? null : index)} data-testid={`button-faq-${index}`} className="flex w-full items-center justify-between gap-5 py-6 text-left text-base font-bold"><span>{question}</span><ChevronDown size={18} className={`shrink-0 text-[var(--blue)] transition-transform ${openFaq === index ? 'rotate-180' : ''}`} /></button>
@@ -304,8 +320,10 @@ function App() {
         </section>
 
         <section className="relative overflow-hidden bg-[var(--blue)] py-24 text-white lg:py-32">
+          <img src="/stage-master-final-stage.jpg" alt="" aria-hidden="true" className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25" />
+          <div className="pointer-events-none absolute inset-0 bg-[var(--blue)]/75" />
           <div className="absolute -right-20 top-10 text-[300px] font-black leading-none text-white/[.07]">SM</div>
-          <div className="relative mx-auto max-w-[900px] px-6 text-center lg:px-12">
+          <div className="relative z-10 mx-auto max-w-[900px] px-6 text-center lg:px-12">
             <Quote className="mx-auto text-[var(--gold)]" size={30} />
             <p className="reveal mt-7 text-[10px] font-bold uppercase tracking-[.26em] text-blue-100">Two versions of the next 30 days</p>
             <h2 className="reveal mt-5 text-4xl font-extrabold leading-[1.04] sm:text-6xl">In 30 days you’ve either done nothing about this — or you’ve become the one they remember.</h2>
