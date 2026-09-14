@@ -126,7 +126,7 @@ function App() {
           <div className="mx-auto w-full max-w-[1380px] px-6 lg:px-12">
             <div className="max-w-3xl">
               <div className="reveal mb-7 inline-flex items-center gap-3 rounded-full border border-[var(--gold)]/40 bg-white/10 px-4 py-2 text-[10px] font-bold tracking-[.08em] text-[var(--gold)]"><span className="h-2 w-2 rounded-full bg-[var(--green)]" />Keynotes · YouTube · Masterminds — one skill unlocks all three</div>
-              <h1 className="reveal reveal-delay-1 display-font max-w-4xl text-5xl font-extrabold leading-[.96] sm:text-7xl lg:text-[6.4rem]">Are You Struggling With Public Speaking? <span className="text-[var(--gold)]">Turn Your Voice Into A High-Ticket Asset.</span></h1>
+              <h1 className="reveal reveal-delay-1 display-font max-w-4xl font-extrabold sm:text-7xl lg:text-[6.4rem] is-visible text-[80px]">Are You Struggling With Public Speaking? <span className="text-[var(--gold)]">Turn Your Voice Into A High-Ticket Asset.</span></h1>
               <p className="reveal reveal-delay-2 mt-8 max-w-xl text-lg leading-relaxed text-slate-200 sm:text-xl">Improve your public speaking with <strong>12 proven NLP strategies</strong> — then monetise your expertise through keynote speaking, stronger YouTube content and exclusive masterminds.</p>
               <ul className="reveal reveal-delay-2 mt-6 max-w-xl space-y-2 text-sm leading-6 text-slate-200">
                 <li className="flex gap-3"><span className="text-[var(--gold)]">•</span><span><strong>Average client on our courses lands $15k gigs</strong> in speaking & mastermind revenue.</span></li>
